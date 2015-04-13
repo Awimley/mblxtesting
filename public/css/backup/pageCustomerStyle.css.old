@@ -1,0 +1,296 @@
+
+.form-horizontal .control-label {
+    padding-top: 7px !important;
+}
+
+.hideMe {
+    display: none;
+}
+
+.btn-default {
+    padding: 5px 10px;
+}
+
+.commodityListItem {
+    padding: 5px 10px;
+}
+.btn-bluish {
+    font-size: 16px;
+
+        
+	color: white;
+    padding: 5px 5px;
+    text-align: center;
+    background-color: #6990B1;
+/*
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;*/
+    border: 1px solid #3D709B;
+/* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73bbe9', endColorstr='#17567f',GradientType=0 ); IE6-9 */
+ filter: none; /*IE6-9 */
+-moz-box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+-webkit-box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+}
+.btn-reddish {
+    font-size: 16px;
+     
+	color: white;
+    padding: 5px 5px;
+    text-align: center;
+    background-color: #8F2400;
+/*
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;*/
+    border: 1px solid #7A1F00;
+/* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73bbe9', endColorstr='#17567f',GradientType=0 ); IE6-9 */
+ filter: none; /*IE6-9 */
+-moz-box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+-webkit-box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+}
+.btn-primary {
+    font-size: 16px;
+/*
+        
+	color: white;*/
+    padding: 5px 5px;
+    text-align: center;
+    background-color: #286090;
+/*
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;*/
+    border: 1px solid #242963;
+/* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73bbe9', endColorstr='#17567f',GradientType=0 ); IE6-9 */
+ filter: none; /*IE6-9 */
+-moz-box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+-webkit-box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+}
+
+.btn-green {
+    font-size: 16px;
+
+        
+	color: white;
+    padding: 5px 5px;
+    text-align: center;
+    background-color: #5cb85c;
+
+/*
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;*/
+    border: 1px solid #4cae4c;
+/* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73bbe9', endColorstr='#17567f',GradientType=0 ); IE6-9 */
+  filter: none; /*IE6-9 */
+-moz-box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+-webkit-box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+}
+
+
+.btn-yellow {
+    font-size: 16px;
+
+        
+	color: white;
+    padding: 5px 5px;
+    text-align: center;
+   background-color: #FF9900;
+
+/*
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;*/
+    border: 1px solid #CC7A00;
+/* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73bbe9', endColorstr='#17567f',GradientType=0 ); IE6-9 */
+   filter: none; /*IE6-9 */
+-moz-box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+-webkit-box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+}
+.btn-turq {
+    font-size: 16px;
+
+        
+	color: white;
+    padding: 5px 5px;
+    text-align: center;
+    background-color: #5bc0de;
+
+/*
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;*/
+    border: 1px solid #46b8da;
+/* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73bbe9', endColorstr='#17567f',GradientType=0 ); IE6-9 */
+    filter: none; /*IE6-9 */
+-moz-box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+-webkit-box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+box-shadow:
+0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+}
+#navTHings > li {
+    border-right: 1px dashed grey;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+    background-color: #AEDCAE;
+}
+
+.btn-turq:hover,
+.btn-turq:focus {
+    background-color: #ADE0EE;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+    background-color: #FFCC80;
+}
+
+.btn-bluish:hover,
+.btn-bluish:focus {
+    background-color: #B4C8D8;
+}
+.btn-reddish:hover,
+.btn-reddish:focus {
+    background-color: #C79280;
+}
+.btn-oldstyle:hover,
+.btn-oldstyle:focus {
+    text-decoration: none;
+    background-position: 0 -15px;
+    -webkit-transition: background-position .1s linear;
+    -moz-transition: background-position .1s linear;
+    -o-transition: background-position .1s linear;
+    transition: background-position .1s linear;
+}
+
+.btn-oldstyle:hover,
+.btn-oldstyle:focus {
+    background-color: #428bca;
+    color: white;
+    text-shadow: 0px -1px 0px rgba(000,000,000,1),
+		0px 1px 0px rgba(255,255,255,0.2);
+}
+
+label {
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+}
+
+.tt-query {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+    color: #999;
+}
+
+.tt-dropdown-menu {
+    width: 422px;
+    margin-top: 12px;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+    border-bottom: 1px dashed black;
+}
+
+.tt-suggestion:hover {
+    background-color: #286090;
+    color: white;
+}

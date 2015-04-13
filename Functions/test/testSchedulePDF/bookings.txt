@@ -1,0 +1,7 @@
+MBLX;  222abc;  Barnacle;  5; Wide Flange Beams; 2; Maritime Endeavors;  Adrianople;  2015-02-01;  Mile-105;  Theodore Plant;  Albany, MO;  3 Rivers Terminal; B/DS/T; New
+MBLX;  222abc;  Barnacle;  2; Wire Rods; 3; Maritime Endeavors;  Adrianople;  2015-02-01;  Mile-105;  Theodore Plant;  Albany, MO;  3 Rivers Terminal; B/DS/T; New
+MBLX;  ABC234;  Braad; 3; Pipe;  12;  Celtic;  Aeolos;  2015-02-01;  Gulfstream Marine; Empire;  Alabo Street Wharf;  Kinder Morgan - Tampa; DS; New
+MBLX;  BOOKINGNUM;  Metal One Americaz;  6; Billets; 8; Navios;  Aquitania; 2015-02-01;  Globalplex-LM 136; Kinder Morgan; Albany, MO;  Century Tube;  OT/B/DS/DT; New
+MBLX;  6677890; Metal One Americaz;  64;  Round Bars;  34;  Celtic;  Aeolos;  2015-02-01;  Gulfstream Marine; Associated Terminals;  Albertville, AL; Adams County;  S/OS/B/DS/S/T; New
+MBLX;  664Ab890;  Metal One Americaz;  2; Billets; 55;  Celtic;  Aeolos;  2015-02-01;  Gulfstream Marine; Associated Terminals;  Albertville, AL; Adams County;  S/OS/B/DS/S/T; New
+MBLX;  664Ab890;  Metal One Americaz;  3; CRC; 33;  Celtic;  Aeolos;  2015-02-01;  Gulfstream Marine; Associated Terminals;  Albertville, AL; Adams County;  S/OS/B/DS/S/T; New

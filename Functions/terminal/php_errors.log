@@ -1,0 +1,2 @@
+[15-Jan-2015 12:03:19 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in D:\home\site\wwwroot\Functions\database_access.php on line 17

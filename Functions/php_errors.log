@@ -1,0 +1,54 @@
+[24-Nov-2014 22:28:29 UTC] PHP Parse error:  syntax error, unexpected 'define' (T_STRING) in D:\home\site\wwwroot\Functions\getVesselData.php on line 10
+[25-Nov-2014 08:45:59 America/Chicago] PHP Warning:  include(/Functions/database_access.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\Functions\getCustomerData.php on line 3
+[25-Nov-2014 08:45:59 America/Chicago] PHP Warning:  include(): Failed opening '/Functions/database_access.php' for inclusion (include_path='.;C:\php\pear') in D:\home\site\wwwroot\Functions\getCustomerData.php on line 3
+[25-Nov-2014 08:45:59 America/Chicago] PHP Notice:  Undefined variable: databaseConnection in D:\home\site\wwwroot\Functions\getCustomerData.php on line 8
+[25-Nov-2014 08:45:59 America/Chicago] PHP Fatal error:  Call to a member function prepare() on null in D:\home\site\wwwroot\Functions\getCustomerData.php on line 8
+[25-Nov-2014 08:46:36 America/Chicago] PHP Warning:  include(/Functions/database_access.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\Functions\getCustomerData.php on line 3
+[25-Nov-2014 08:46:36 America/Chicago] PHP Warning:  include(): Failed opening '/Functions/database_access.php' for inclusion (include_path='.;C:\php\pear') in D:\home\site\wwwroot\Functions\getCustomerData.php on line 3
+[25-Nov-2014 08:46:36 America/Chicago] PHP Notice:  Undefined variable: databaseConnection in D:\home\site\wwwroot\Functions\getCustomerData.php on line 8
+[25-Nov-2014 08:46:36 America/Chicago] PHP Fatal error:  Call to a member function prepare() on null in D:\home\site\wwwroot\Functions\getCustomerData.php on line 8
+[25-Nov-2014 08:47:04 America/Chicago] PHP Warning:  include(/Functions/database_access.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\Functions\getCustomerData.php on line 3
+[25-Nov-2014 08:47:04 America/Chicago] PHP Warning:  include(): Failed opening '/Functions/database_access.php' for inclusion (include_path='.;C:\php\pear') in D:\home\site\wwwroot\Functions\getCustomerData.php on line 3
+[25-Nov-2014 08:47:04 America/Chicago] PHP Notice:  Undefined variable: databaseConnection in D:\home\site\wwwroot\Functions\getCustomerData.php on line 8
+[25-Nov-2014 08:47:04 America/Chicago] PHP Fatal error:  Call to a member function prepare() on null in D:\home\site\wwwroot\Functions\getCustomerData.php on line 8
+[25-Nov-2014 08:47:20 America/Chicago] PHP Warning:  include(/Functions/database_access.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\Functions\getCustomerData.php on line 2
+[25-Nov-2014 08:47:20 America/Chicago] PHP Warning:  include(): Failed opening '/Functions/database_access.php' for inclusion (include_path='.;C:\php\pear') in D:\home\site\wwwroot\Functions\getCustomerData.php on line 2
+[25-Nov-2014 08:47:20 America/Chicago] PHP Notice:  Undefined variable: databaseConnection in D:\home\site\wwwroot\Functions\getCustomerData.php on line 9
+[25-Nov-2014 08:47:20 America/Chicago] PHP Fatal error:  Call to a member function prepare() on null in D:\home\site\wwwroot\Functions\getCustomerData.php on line 9
+[25-Nov-2014 08:47:21 America/Chicago] PHP Warning:  include(/Functions/database_access.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\Functions\getCustomerData.php on line 2
+[25-Nov-2014 08:47:21 America/Chicago] PHP Warning:  include(): Failed opening '/Functions/database_access.php' for inclusion (include_path='.;C:\php\pear') in D:\home\site\wwwroot\Functions\getCustomerData.php on line 2
+[25-Nov-2014 08:47:21 America/Chicago] PHP Notice:  Undefined variable: databaseConnection in D:\home\site\wwwroot\Functions\getCustomerData.php on line 9
+[25-Nov-2014 08:47:21 America/Chicago] PHP Fatal error:  Call to a member function prepare() on null in D:\home\site\wwwroot\Functions\getCustomerData.php on line 9
+[25-Nov-2014 08:47:21 America/Chicago] PHP Warning:  include(/Functions/database_access.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\Functions\getCustomerData.php on line 2
+[25-Nov-2014 08:47:21 America/Chicago] PHP Warning:  include(): Failed opening '/Functions/database_access.php' for inclusion (include_path='.;C:\php\pear') in D:\home\site\wwwroot\Functions\getCustomerData.php on line 2
+[25-Nov-2014 08:47:21 America/Chicago] PHP Notice:  Undefined variable: databaseConnection in D:\home\site\wwwroot\Functions\getCustomerData.php on line 9
+[25-Nov-2014 08:47:21 America/Chicago] PHP Fatal error:  Call to a member function prepare() on null in D:\home\site\wwwroot\Functions\getCustomerData.php on line 9
+[25-Nov-2014 08:47:42 America/Chicago] PHP Warning:  include(/Includes/database_access.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\Functions\getCustomerData.php on line 2
+[25-Nov-2014 08:47:42 America/Chicago] PHP Warning:  include(): Failed opening '/Includes/database_access.php' for inclusion (include_path='.;C:\php\pear') in D:\home\site\wwwroot\Functions\getCustomerData.php on line 2
+[25-Nov-2014 08:47:42 America/Chicago] PHP Notice:  Undefined variable: databaseConnection in D:\home\site\wwwroot\Functions\getCustomerData.php on line 9
+[25-Nov-2014 08:47:42 America/Chicago] PHP Fatal error:  Call to a member function prepare() on null in D:\home\site\wwwroot\Functions\getCustomerData.php on line 9
+[25-Nov-2014 08:47:44 America/Chicago] PHP Warning:  include(/Includes/database_access.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\Functions\getCustomerData.php on line 2
+[25-Nov-2014 08:47:44 America/Chicago] PHP Warning:  include(): Failed opening '/Includes/database_access.php' for inclusion (include_path='.;C:\php\pear') in D:\home\site\wwwroot\Functions\getCustomerData.php on line 2
+[25-Nov-2014 08:47:44 America/Chicago] PHP Notice:  Undefined variable: databaseConnection in D:\home\site\wwwroot\Functions\getCustomerData.php on line 9
+[25-Nov-2014 08:47:44 America/Chicago] PHP Fatal error:  Call to a member function prepare() on null in D:\home\site\wwwroot\Functions\getCustomerData.php on line 9
+[25-Nov-2014 08:47:44 America/Chicago] PHP Warning:  include(/Includes/database_access.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\Functions\getCustomerData.php on line 2
+[25-Nov-2014 08:47:44 America/Chicago] PHP Warning:  include(): Failed opening '/Includes/database_access.php' for inclusion (include_path='.;C:\php\pear') in D:\home\site\wwwroot\Functions\getCustomerData.php on line 2
+[25-Nov-2014 08:47:44 America/Chicago] PHP Notice:  Undefined variable: databaseConnection in D:\home\site\wwwroot\Functions\getCustomerData.php on line 9
+[25-Nov-2014 08:47:45 America/Chicago] PHP Fatal error:  Call to a member function prepare() on null in D:\home\site\wwwroot\Functions\getCustomerData.php on line 9
+[25-Nov-2014 13:26:40 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent in D:\home\site\wwwroot\Functions\postCustomerData.php on line 3
+[25-Nov-2014 13:27:38 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent in D:\home\site\wwwroot\Functions\postCustomerData.php on line 3
+[25-Nov-2014 13:44:36 America/Chicago] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in D:\home\site\wwwroot\Functions\getCustomerData.php on line 16
+[01-Dec-2014 10:24:15 America/Chicago] PHP Fatal error:  Call to a member function execute() on boolean in D:\home\site\wwwroot\Functions\getCustomerPageData.php on line 9
+[01-Dec-2014 10:24:19 America/Chicago] PHP Fatal error:  Call to a member function execute() on boolean in D:\home\site\wwwroot\Functions\getCustomerPageData.php on line 9
+[01-Dec-2014 14:21:31 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on boolean in D:\home\site\wwwroot\Functions\updateCustomerData.php on line 28
+[01-Dec-2014 16:19:54 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on boolean in D:\home\site\wwwroot\Functions\getCustomerContacts.php on line 16
+[01-Dec-2014 16:22:03 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent in D:\home\site\wwwroot\Functions\getCustomerContacts.php on line 3
+[01-Dec-2014 16:22:03 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on boolean in D:\home\site\wwwroot\Functions\getCustomerContacts.php on line 16
+[01-Dec-2014 16:23:41 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on boolean in D:\home\site\wwwroot\Functions\getCustomerContacts.php on line 16
+[05-Dec-2014 08:14:39 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in D:\home\site\wwwroot\Functions\getVesselData.php on line 12
+[05-Dec-2014 08:14:39 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in D:\home\site\wwwroot\Functions\database_access.php on line 12
+[15-Jan-2015 12:02:58 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in D:\home\site\wwwroot\Functions\database_access.php on line 17
+[22-Jan-2015 11:46:20 America/Chicago] PHP Fatal error:  Call to a member function execute() on boolean in D:\home\site\wwwroot\Functions\getCustomerData.php on line 10

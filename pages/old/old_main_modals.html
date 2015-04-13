@@ -1,0 +1,212 @@
+
+<div class="modal fade" id="commoditiesModal" tabindex="-1" role="dialog" data-aria-labelledby="customerEditModalLabel" data-aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span data-aria-hidden="true">&times;</span><span class="sr-only">Close</span> </button>
+                <h4 class="modal-title" id="customerEditModalLabel">Add Customer</h4> </div>
+            <div class="modal-body">
+                <!--form id="addCustomerForm" data-persist="garlic" class="form-horizontal" role="form"-->
+                <form id="addCustomerForm" data-persist="garlic" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="inputCustomerModal" class="col-xs-2 control-label">Customer</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="inputCustomerModal" placeholder="Abellon Clean Energy"> </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputContactsModal" class="col-xs-2 control-label">Contacts</label>
+                        <div class="col-xs-10">
+                            <select multiple class="form-control">
+                                <option>Bill Jasper</option>
+                                <option>Steve Elliot</option>
+                                <option>Contact Manns</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-xs-2 control-label">Email</label>
+                        <div class="col-xs-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email"> </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddressModal" class="col-xs-2 control-label">Address</label>
+                        <div class="col-xs-10">
+                            <textarea id="inputAddressModal" class="form-control" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-xs-2 control-label">City</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="Northumbria"> </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="vesselTripEditModal" tabindex="-1" role="dialog" data-aria-labelledby="vesselTripEditModalLabel" data-aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span data-aria-hidden="true">&times;</span><span class="sr-only">Close</span> </button>
+                <h4 class="modal-title" id="vesselTripEditModalLabel">Add Vessel Trip</h4> </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="inputVesselModal" class="col-xs-3 control-label">Vessel Name</label>
+                        <div class="col-xs-9">
+                            <select id="inputVesselModal" class="form-control"> </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputVesselTripEta" class="col-xs-3 control-label"> ETA </label>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control datepicker" id="inputVesselTripEta" placeholder="" /> </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button id="btnAddVesselTripSave" type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--div class="modal fade" id="contractModal" tabindex="-1" role="dialog" data-aria-labelledby="contractModalLabel" data-aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal"><span data-aria-hidden="true">&times;</span><span class="sr-only">Close</span> </button> <h4 class="modal-title" id="vesselTripEditModalLabel">Select Contract</h4> </div> <div class="modal-body"> </div> <div class="modal-footer"> <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button> <button id="btnXSave" type="button" class="btn btn-primary">Save changes</button> </div> </div> </div> </div-->
+<div class="modal fade" id="vesselEditModal" tabindex="-1" role="dialog" data-aria-labelledby="vesselEditModalLabel" data-aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span data-aria-hidden="true">&times;</span><span class="sr-only">Close</span> </button>
+                <h4 class="modal-title" id="vesselEditModalLabel">Add Vessel</h4> </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="inputVesselModal" class="col-xs-2 control-label">Vessel Name</label>
+                        <div class="col-xs-10">
+                            <input id="inputAddVessel_name" type="text" class="form-control" placeholder="" /> </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button id="btnAddVesselSave" type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="voyageEditModal" tabindex="-1" role="dialog" data-aria-labelledby="voyageEditModalLabel" data-aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span data-aria-hidden="true">&times;</span><span class="sr-only">Close</span> </button>
+                <h4 class="modal-title" id="voyageEditModalLabel">Add Voyage</h4> </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="inputVoyageModal" class="col-xs-2 control-label">Voyage Number</label>
+                        <div class="col-xs-10">
+                            <input id="inputAddVoyage_name" type="text" class="form-control" placeholder="" /> </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button id="btnAddVoyageSave" type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="customerEditModal" tabindex="-1" role="dialog" data-aria-labelledby="customerEditModalLabel" data-aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span data-aria-hidden="true">&times;</span><span class="sr-only">Close</span> </button>
+                <h4 class="modal-title" id="customerEditModalLabel">Add Customer</h4> </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="inputCustomerModal" class="col-xs-2 control-label">Customer</label>
+                        <div class="col-xs-10">
+                            <input id="inputAddCustomer_name" type="text" class="form-control" id="inputCustomerModal" placeholder="Abellon Clean Energy" /> </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputContactsModal" class="col-xs-2 control-label">Contacts</label>
+                        <div class="col-xs-10">
+                            <select multiple class="form-control">
+                                <option>Bill Jasper</option>
+                                <option>Steve Elliot</option>
+                                <option>Contact Manns</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-xs-2 control-label">Email</label>
+                        <div class="col-xs-10">
+                            <input id="inputAddCustomer_email" type="email" class="form-control" id="inputEmail3" placeholder="Email" /> </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddressModal" class="col-xs-2 control-label">Address</label>
+                        <div class="col-xs-10">
+                            <textarea id="inputAddCustomer_address" class="form-control" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-xs-2 control-label">City</label>
+                        <div class="col-xs-10">
+                            <input id="inputAddCustomer_city" type="text" class="form-control" id="inputEmail3" placeholder="Northumbria" /> </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button id="btnAddCustomerSave" type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="selectServicesModal" tabindex="-1" role="dialog" data-aria-labelledby="selectServicesLabel" data-aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span data-aria-hidden="true">&times;</span><span class="sr-only">Close</span> </button>
+                <h4 class="modal-title" id="selectServicesLabel">Select Services</h4> </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" onchange="populateField('inputService', 'Services Selected');"> AB &middot; Service 1 </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" onchange="populateField('inputService', 'Services Selected');"> CD &middot; Service 2 </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" onchange="populateField('inputService', 'Services Selected');"> EF &middot; Service 3 </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button id="svc" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

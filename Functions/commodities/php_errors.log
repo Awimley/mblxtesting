@@ -1,0 +1,8 @@
+[05-Dec-2014 08:14:39 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in D:\home\site\wwwroot\Functions\database_access.php on line 12
+[05-Dec-2014 12:25:11 America/Chicago] PHP Fatal error:  Call to a member function execute() on boolean in D:\home\site\wwwroot\Functions\commodities\getCommodities.php on line 9
+[05-Dec-2014 12:29:38 America/Chicago] PHP Fatal error:  Call to a member function execute() on boolean in D:\home\site\wwwroot\Functions\commodities\getCommodities.php on line 9
+[05-Dec-2014 12:29:45 America/Chicago] PHP Fatal error:  Call to a member function execute() on boolean in D:\home\site\wwwroot\Functions\commodities\getCommodities.php on line 9
+[05-Dec-2014 12:29:48 America/Chicago] PHP Fatal error:  Call to a member function execute() on boolean in D:\home\site\wwwroot\Functions\commodities\getCommodities.php on line 9
+[15-Jan-2015 12:03:19 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in D:\home\site\wwwroot\Functions\database_access.php on line 17

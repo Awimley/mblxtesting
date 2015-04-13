@@ -1,0 +1,23 @@
+[02-Dec-2014 09:54:36 America/Chicago] PHP Warning:  include(database_access.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\Functions\customer\addCustomer.php on line 11
+[02-Dec-2014 09:54:36 America/Chicago] PHP Warning:  include(): Failed opening 'database_access.php' for inclusion (include_path='.;C:\php\pear') in D:\home\site\wwwroot\Functions\customer\addCustomer.php on line 11
+[02-Dec-2014 09:54:36 America/Chicago] PHP Notice:  Undefined variable: databaseConnection in D:\home\site\wwwroot\Functions\customer\addCustomer.php on line 15
+[02-Dec-2014 09:54:36 America/Chicago] PHP Fatal error:  Call to a member function prepare() on null in D:\home\site\wwwroot\Functions\customer\addCustomer.php on line 15
+[02-Dec-2014 09:56:13 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on boolean in D:\home\site\wwwroot\Functions\customer\addCustomer.php on line 16
+[05-Dec-2014 08:14:39 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in D:\home\site\wwwroot\Functions\database_access.php on line 12
+[05-Dec-2014 12:05:27 America/Chicago] PHP Fatal error:  Call to a member function execute() on boolean in D:\home\site\wwwroot\Functions\customer\getCustomerPageData.php on line 9
+[05-Dec-2014 12:05:57 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on boolean in D:\home\site\wwwroot\Functions\customer\addCustomer.php on line 16
+[05-Dec-2014 12:08:07 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on boolean in D:\home\site\wwwroot\Functions\customer\addCustomer.php on line 16
+[05-Dec-2014 12:12:18 America/Chicago] PHP Fatal error:  Call to a member function execute() on boolean in D:\home\site\wwwroot\Functions\customer\getCustomerPageData.php on line 9
+[05-Dec-2014 12:12:24 America/Chicago] PHP Fatal error:  Call to a member function execute() on boolean in D:\home\site\wwwroot\Functions\customer\getCustomerPageData.php on line 9
+[05-Dec-2014 12:12:29 America/Chicago] PHP Fatal error:  Call to a member function execute() on boolean in D:\home\site\wwwroot\Functions\customer\getCustomerPageData.php on line 9
+[05-Dec-2014 12:19:26 America/Chicago] PHP Fatal error:  Call to a member function execute() on boolean in D:\home\site\wwwroot\Functions\customer\getCustomerPageData.php on line 9
+[05-Dec-2014 12:19:31 America/Chicago] PHP Fatal error:  Call to a member function execute() on boolean in D:\home\site\wwwroot\Functions\customer\getCustomerPageData.php on line 9
+[13-Jan-2015 14:35:29 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in D:\home\site\wwwroot\Functions\database_access.php on line 19
+[13-Jan-2015 14:36:32 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in D:\home\site\wwwroot\Functions\database_access.php on line 19
+[15-Jan-2015 12:02:57 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in D:\home\site\wwwroot\Functions\database_access.php on line 17
+[15-Jan-2015 12:04:10 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in D:\home\site\wwwroot\Functions\database_access.php on line 17

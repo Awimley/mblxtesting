@@ -1,0 +1,317 @@
+var custNames = [];
+var vesselNames = [];
+var vesselTripNames = [];
+$(function () {
+    $("#btnCommodityTab").click(function () {
+        $("div#vesselTab").addClass('hideMe');
+        $("div#commodityTab").removeClass('hideMe');
+    });
+    $("#btnVesselTab").click(function () {
+        $("div#vesselTab").removeClass('hideMe');
+        $("div#commodityTab").addClass('hideMe');
+    });
+    $("#btnAddCustomerSave").click(function () {
+        //alert("Handler for .click() called.");
+        var custName = $("#inputAddCustomer_name").val();
+        var custEmail = $("#inputAddCustomer_email").val();
+        var custAddress = $("#inputAddCustomer_address").val();
+        var custCity = $("#inputAddCustomer_city").val();
+
+
+        var promise = Mblx.Customers.DataAccess.addCustomer(custName, custEmail, custAddress, custCity);
+        promise.then(onAddCustomerSuccess, onErrorFunction);
+    });
+
+    $("#btnAddVesselSave").click(function () {
+        //alert("Handler for .click() called.");
+        var vesselName = $("#inputAddVessel_name").val();
+
+
+        var promise = Mblx.Vessels.DataAccess.addVessel(vesselName);
+        promise.then(onAddVesselSuccess, onErrorFunction);
+    });
+
+    $("#btnAddVesselTripSave").click(function () {
+        //alert("Handler for .click() called.");
+        var vesselID = $("#inputVesselModal option:selected").attr('data-vesselid');
+        var vesselTripEta = $("#inputVesselTripEta").val();
+
+        var promise = Mblx.Vessels.DataAccess.addVesselTrip(vesselID, vesselTripEta);
+        promise.then(onAddVesselTripSuccess, onErrorFunction);
+    });
+
+    $("img#bookingLoadingGif").removeClass('hideMe');
+    $.when(initialLoadTasks()).done(function () {
+        $("img#bookingLoadingGif").addClass('hideMe');
+
+    });
+    $('.datepicker').datepicker({
+        //format: 'yyyy-mm-dd'
+       format: 'mm/dd/yyyy'
+    });
+    $('#inputFinalDate').datepicker({
+        //format: 'yyyy-mm-dd'
+       format: 'mm/dd/yyyy'
+    });
+    $("#inputBookingDate").val(getTodayFormattedDate());
+});
+
+function initialLoadTasks() {
+
+    getCustomers();
+    getVessels();
+    getVesselTrips();
+}
+
+function getCustomers() {
+
+    // clear results and add spinning gears icon
+    $.when($('.customerListItem').remove()).done(function() {
+        var promise = Mblx.Customers.DataAccess.getCustomers();
+
+        // use promise to implement what happens when OData result is ready
+        promise.then(onGetCustomersComplete, onErrorFunction);
+    });
+
+    // call view-model function which returns promise
+
+
+}
+
+function getVessels() {
+    $.when($('.vesselListItem').remove()).done(function() {
+        // clear results and add spinning gears icon
+
+
+        // call view-model function which returns promise
+        var promise = Mblx.Vessels.DataAccess.getVessels();
+
+        // use promise to implement what happens when OData result is ready
+        promise.then(onGetVesselsComplete, onErrorFunction);
+    });
+}
+
+function getVesselTrips() {
+
+    // clear results and add spinning gears icon
+    $.when($('.vesselTripListItem').remove()).done(function() {
+        var promise = Mblx.Vessels.DataAccess.getVesselTrips();
+
+        // use promise to implement what happens when OData result is ready
+        promise.then(onGetVesselTripsComplete, onErrorFunction);
+    });
+
+    // call view-model function which returns promise
+
+
+}
+
+function onGetCustomersComplete(data) {
+
+    data.sort(function(a, b) {
+        if (a.rank > b.rank) {
+            return 1;
+        }
+        if (a.rank < b.rank) {
+            return -1;
+        }
+        return 0;
+    });
+    ////console.log(data);
+    var listItemString = "";
+    var listItemBuildConter = 0;
+    jQuery.each(data, function(q, r) {
+        ////console.log(q);
+        custNames.push(r.name);
+        if (listItemBuildConter > 2) {
+            return false;
+        } else {
+            listItemBuildConter++;
+            listItemString += '<li class="customerListItem"><a href="#" data-customerId="' + r.id + '">' + r.name + '</a></li>';
+        }
+        ////console.log(r);
+    });
+    ////console.log(listItemString);
+    $("#customerDropdown").append(listItemString);
+    $('.customerTypeahead').typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+    }, {
+        name: 'custNames',
+        displayKey: 'value',
+        source: substringMatcher(custNames)
+    });
+    //console.log("loaded dem types");
+}
+
+function onGetVesselTripsComplete(data) {
+
+    data.sort(function(a, b) {
+        if (a.trip_eta > b.trip_eta) {
+            return 1;
+        }
+        if (a.trip_eta < b.trip_eta) {
+            return -1;
+        }
+        return 0;
+    });
+
+    var listItemString = "";
+    var listItemBuildConter = 0;
+    jQuery.each(data, function(q, r) {
+
+        // vesselTripNames.push(r.name);
+        if (listItemBuildConter > 10) {
+            return false;
+        } else {
+            listItemBuildConter++;
+            listItemString += '<a href="#" data-tripId="' + r.id + '"class="list-group-item vesselTripListItem"> \
+                                    <h4 class="list-group-item-heading">' + r.vessel_name + '</h4> \
+                                    <p class="list-group-item-text">' + r.trip_eta + '</p> \
+                                </a>';
+        }
+
+    });
+
+    $("#vesselTripDropdown").append(listItemString);
+
+}
+
+function onGetVesselsComplete(data) {
+    data.sort(function(a, b) {
+        if (a.rank > b.rank) {
+            return 1;
+        }
+        if (a.rank < b.rank) {
+            return -1;
+        }
+        return 0;
+    });
+    ////console.log(data);
+    var listItemString = "";
+    var listItemSelectString = "";
+    var listItemBuildConter = 0;
+    jQuery.each(data, function(q, r) {
+        ////console.log(q);
+        vesselNames.push(r.name);
+        if (listItemBuildConter > 20) {
+            return false;
+        } else {
+            listItemBuildConter++;
+            listItemString += '<li class="vesselListItem"><a href="#" data-vesselId="' + r.id + '">' + r.name + '</a></li>';
+            listItemSelectString += '<option data-vesselId="' + r.id + '">' + r.name + '</option>';
+        }
+        ////console.log(r);
+    });
+    ////console.log(listItemString);
+    $("#vesselDropdown").append(listItemString);
+    $('#inputVesselModal').html(listItemSelectString);
+    $('.vesselTypeahead').typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+    }, {
+        name: 'vesselNames',
+        displayKey: 'value',
+        source: substringMatcher(vesselNames)
+    });
+    //console.log("loaded dem types");
+}
+
+function onAddCustomerSuccess(data) {
+    //console.log(data);
+    $("div#mainAlert").append("<h3>Added New Customer</h3>");
+
+    $('#customerEditModal').modal('hide')
+    $("div#mainAlert").removeClass('hideMe');
+    setTimeout(function() {
+        $("div#mainAlert").addClass('hideMe')
+    }, 3000);
+}
+
+function onAddVesselTripSuccess(data) {
+    console.log(data);
+    $('#vesselTripEditModal').modal('hide');
+    showMainAlert('Added Vessel Trip');
+}
+
+function showMainAlert(message) {
+    $("div#mainAlert").empty();
+    $("div#mainAlert").append("<h3>" + message + "</h3>");
+    $("div#mainAlert").removeClass('hideMe');
+    setTimeout(function() {
+        $("div#mainAlert").addClass('hideMe')
+    }, 3000);
+}
+function onAddVesselSuccess(data) {
+    $("div#mainAlert").empty();
+    $("div#mainAlert").append("<h3>Added New Vessel</h3>");
+
+    $('#vesselEditModal').modal('hide')
+    $("div#mainAlert").removeClass('hideMe');
+    setTimeout(function() {
+        $("div#mainAlert").addClass('hideMe')
+    }, 3000);
+    getVessels();
+}
+
+function sortByKey(array, key) {
+    return array.sort(function(a, b) {
+        var x = a[key];
+        var y = b[key];
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    });
+}
+
+var substringMatcher = function(strs) {
+    return function findMatches(q, cb) {
+        var matches, substrRegex;
+
+        // an array that will be populated with substring matches
+        matches = [];
+
+        // regex used to determine if a string contains the substring `q`
+        substrRegex = new RegExp(q, 'i');
+
+        // iterate through the pool of strings and for any string that
+        // contains the substring `q`, add it to the `matches` array
+        $.each(strs, function(i, str) {
+            if (substrRegex.test(str)) {
+                // the typeahead jQuery plugin expects suggestions to a
+                // JavaScript object, refer to typeahead docs for more info
+                matches.push({
+                    value: str
+                });
+            }
+        });
+
+        cb(matches);
+    };
+};
+
+function getTodayFormattedDate() {
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+
+    var yyyy = today.getFullYear();
+    if (dd < 10) {
+        dd = '0' + dd
+    }
+    if (mm < 10) {
+        mm = '0' + mm
+    }
+    var today = mm + '/' + dd + '/' + yyyy;
+    //var today = yyyy + '-' + mm + '-' + dd;
+    //return today;
+
+    return false;
+}
+
+
+function onErrorFunction(error) {
+    console.log("error performing operation");
+    console.log(error);
+    //location.reload();
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kendo UI Snippet</title>
+
+    <link rel="stylesheet" href="/public/css/kendo.common.min.css" />
+    <link rel="stylesheet" href="/public/css/kendo.metro.min.css" />
+
+    <link rel="stylesheet" href="/public/css/kendo.dataviz.min.css" />
+
+    <link rel="stylesheet" href="/public/css/kendo.dataviz.metro.min.css" />
+
+
+
+
+    <script src="/public/js/jquery-1.11.2.js"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/es6-shim/0.27.1/es6-sham.min.js"></script>
+    <script src="//cdn.kendostatic.com/2014.1.318/js/kendo.all.min.js"></script>
+
+   <script>
+  $(function () {
+  $("#draggable").kendoDraggable({
+        filter: ".addedCommodityItem", //specify which items will be draggable
+        hint: function (element) { //create a UI hint, the `element` argument is the dragged item
+            return element.clone().css({
+                "opacity": 0.6,
+                "background-color": "#0cf"
+            });
+        }
+    });
+  });
+</script>
+<style>
+  #draggable {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border: 2px solid green;
+  }
+</style>
+<body>
+  
+<div id="draggable"></div>
+
+
+
+</body>
+</html>
